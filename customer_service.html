@@ -1,0 +1,36 @@
+<!-- customer_service.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Web Development Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #f5f5dc;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="customer_service.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Customer Service</h1>
+        <p>We are here to help you with any issues or questions you may have.</p>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
+        fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
